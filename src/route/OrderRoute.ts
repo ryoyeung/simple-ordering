@@ -1,5 +1,5 @@
 import OrderController from '../controller/OrderController'
-import Route from '../interface/route'
+import Route from '../interface/Route'
 
 const OrderRoute: Array<Route> = [
   {

@@ -1,5 +1,5 @@
 import OrderRoute from './OrderRoute'
-import Route from '../interface/route'
+import Route from '../interface/Route'
 
 const Routes: Array<Route> = [
   ...OrderRoute
