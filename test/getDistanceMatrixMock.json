@@ -1,0 +1,26 @@
+{
+  "destination_addresses": [
+    "15 Queen's Road Central, Central, Hong Kong"
+  ],
+  "origin_addresses": [
+    "Po Lam Station, Po Lam Rd, Yau Yue Wan, Hong Kong"
+  ],
+  "rows": [
+    {
+      "elements": [
+        {
+          "distance": {
+            "text": "15.6 km",
+            "value": 15600
+          },
+          "duration": {
+            "text": "20 mins",
+            "value": 1185
+          },
+          "status": "OK"
+        }
+      ]
+    }
+  ],
+  "status": "OK"
+}

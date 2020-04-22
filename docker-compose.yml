@@ -1,0 +1,19 @@
+version: '3'
+services:
+  node:
+    build: .
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db
+  db:
+    image: "mysql:5.7.24"
+    ports:
+      - "3306:3306"
+    env_file:
+      - ./.env
+    environment:
+      - "MYSQL_HOST=${TYPEORM_HOST}"
+      - "MYSQL_ROOT_PASSWORD=${TYPEORM_PASSWORD}"
+      - "MYSQL_DATABASE=${TYPEORM_DATABASE}"
+      

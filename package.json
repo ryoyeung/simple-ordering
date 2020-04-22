@@ -1,0 +1,66 @@
+{
+  "name": "simple-ordering",
+  "version": "1.0.0",
+  "description": "A simple ordering application using Express.js and TypeORM with Typescript",
+  "author": "Ryo Yeung",
+  "license": "ISC",
+  "keywords": [
+    "express",
+    "typescript",
+    "typeorm",
+    "mysql",
+    "class-validator",
+    "mocha",
+    "chai",
+    "docker"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "serve": "nodemon --exce ts-node src/index.ts",
+    "start": "node dist/src/index.js",
+    "test": "mocha -r ts-node/register test/*.spec.ts --timeout=5000 --exit",
+    "migration:dev": "./node_modules/.bin/ts-node ./node_modules/.bin/typeorm migration:run",
+    "migration:prod": "./node_modules/.bin/typeorm migration:run",
+    "standard:fix": "standard --fix src/**/*.ts test/**/*.ts"
+  },
+  "standard": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint/eslint-plugin"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "lodash": "^4.17.15",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.24"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.19.0",
+    "@types/chai": "^4.2.11",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.6",
+    "@types/lodash": "^4.14.150",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^13.11.1",
+    "@typescript-eslint/eslint-plugin": "^2.28.0",
+    "@typescript-eslint/parser": "^2.28.0",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.8.0",
+    "mocha": "^7.1.1",
+    "nodemon": "^2.0.3",
+    "standard": "^14.3.3",
+    "ts-node": "^3.3.0",
+    "typescript": "^3.8.3"
+  }
+}
